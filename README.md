@@ -1,1 +1,1 @@
-# NGSIM-dataset-smoothing
+# NGSIM dataset smoothing
