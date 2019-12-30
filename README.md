@@ -40,7 +40,7 @@ We rely on the second approach and we use the [Savitzky-Golay filter](https://do
 
 The Savitzky-Golay filter requires a smoothing window which dictates the number of points used to smooth a current data point. We use separately a  window of 11 and 21. We specifically choose 11 and 21, because it represents 10 and 20 data points excluding the target data point. This in trun corresponds to 1 second and 2 seconds of trajectory data respectively. In other words, we use the trajectory data of 1 seconds and 2 seconds to smooth the data.
 
-**NOTE.** we apply the filter on the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the coordinate system.
+**NOTE.** we apply the filter on the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
 
 
 ### How To Use
