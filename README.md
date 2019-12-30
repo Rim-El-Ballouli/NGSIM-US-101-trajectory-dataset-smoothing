@@ -6,31 +6,43 @@
 
 ### Table of Content
 
-1. [About The NGSIM US-101 Dataset]()
+1. [The NGSIM US-101 Dataset]()
 2. [Smoothing approach]()
 3. [How to use]() 
 
 
-### About The NGSIM US-101 Dataset
-The NGSIM US 101 datatset has been the ultimate open source dataset for trajectory prediction for researchers since its release in 2005. Many Researchers including [1-3] have pointed out the presence of noise in the dataset, mainly due to the fact that it has been automatically extracted from video recordings of 8 cameras mounted over buildings overlooking the Hollywood Freeway, in Los Angeles, CA, also known as southbound US 101. The software used for the extraction of the NGSIM US-101 dataset is called, In addition, the NGSIM documentation explicitly says: 
+### The NGSIM US-101 Dataset
+The NGSIM US 101 datatset has been the ultimate open source dataset for trajectory prediction for researchers since its release in 2005. Many Researchers including [1-3] have pointed out the presence of noise in the dataset, mainly due to the fact that it has been automatically extracted from video recordings of 8 cameras mounted over buildings overlooking the Hollywood Freeway, in Los Angeles, CA, also known as southbound US 101. The software used for the extraction of the NGSIM US-101 dataset is called NG-VIDEO software. In addition, the NGSIM documentation explicitly says: 
 
-> <span style="color:red"> no accuracy assessment has been performed for the data set
+> no accuracy assessment has been performed for the data set
 > 
-> <span style="color:red">[We do] not make any claims regarding data completeness. There
-may be gaps in the data provided </span>
+> [We do] not make any claims regarding data completeness. There
+>may be gaps in the data provided
 
-Some useful links for more details on the NGSIM dataset 
-* [Website]() the official dataset webpage
-* [Fact sheet]() a fact sheet about the dataset
-* [NGSIM project webpage]()
+We found that when plotting acceleration against time, for some vehicles, there is a hard acceleration and deceleration in few seconds, which is unrealistic. Also we found that 8.99% of the dataset has an unrealistic acceeration above 3 m/s^2.
 
+
+For more details on the NGSIM dataset, here are Some useful links 
+* [Website](https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj) the official dataset webpage
+* [Fact sheet](https://www.fhwa.dot.gov/publications/research/operations/07030/index.cfm) about the dataset
+* [NGSIM project webpage](https://ops.fhwa.dot.gov/trafficanalysistools/ngsim.htm)
 
 
 ### Smoothing approach:
-1.	Smooth positions, then differentiate velocities and acceleration
-2.	Differentiate velocities and accelerations, then smooth all three variables
-3.	Smooth positions, differentiate velocities, smooth velocities, differentiate acceleration, smooth acceleration
+There are three main approaches that can be used to smooth the dataset, which are:
 
+1.	Smooth all four variables i.e. X, Y, velocities and accelerations
+2.	Smooth X, and Y, then differentiate velocities and acceleration
+3.	Smooth X and Y, then differentiate velocities, smooth velocities, differentiate acceleration, and finally smooth acceleration
+
+We rely on the second approach and we use the [Savitzky-Golay filter](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.signal.savgol_filter.html) implemented in the python scipy.signal library
+
+### Requirments
+	
+conda environment
+3.6 pythong
+
+how to use 
 
 ### References
 [1] Montanino, Marcello, and Vincenzo Punzo. "*Making NGSIM data usable for studies on traffic flow theory: Multistep method for vehicle trajectory reconstruction.*" Transportation Research Record 2390.1 (2013): 99-111.
