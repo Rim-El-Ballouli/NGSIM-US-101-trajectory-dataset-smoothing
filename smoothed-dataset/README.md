@@ -15,8 +15,9 @@ We use separately a window of 11 and 21. We specifically chose 11 and 21 because
 
 **NOTE.** the filter is applied to the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
 
+<p style="text-align: center;"> Smothing window 11 </p>
 ![Drag Racing](x_y_smoothed_11.png)
-
+<p style="text-align: center;"> Smothing window 21 </p>
 ![Drag Racing](x_y_smoothed_21.png)
 ### Folder Structure
 Each folder contains three files:
