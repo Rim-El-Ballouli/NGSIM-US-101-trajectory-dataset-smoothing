@@ -13,7 +13,7 @@ Here you can find the smoothed dataset in CSV format. We provide two version of 
 ### Smoothing Window
 We use separately a window of 11 and 21. We specifically chose 11 and 21 because they represent, respectively, 10 and 20 data points excluding the target data point. This in trun corresponds, respectively, to 1 second and 2 seconds of trajectory data respectively. In other words, we use the trajectory data of 1 seconds and 2 seconds to smooth the data. Both datasets can be found in the folder window-11 and window-12 respectively.
 
-NOTE. the filter is applied to the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
+**NOTE.** the filter is applied to the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
 
 ### Folder Structure
 Each folder contains three files:
