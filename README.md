@@ -38,7 +38,6 @@ There are three main approaches that can be used to smooth the dataset, which ar
 
 We rely on the second approach and we use the [Savitzky-Golay filter](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.signal.savgol_filter.html) implemented in the python scipy.signal library. 
 
-The Savitzky-Golay filter requires a smoothing window which dictates the number of points used to smooth a current data point. We use separately a  window of 11 and 21. We specifically choose 11 and 21, because it represents 10 and 20 data points excluding the target data point. This in trun corresponds to 1 second and 2 seconds of trajectory data respectively. In other words, we use the trajectory data of 1 seconds and 2 seconds to smooth the data.
 
 **NOTE.** we apply the filter on the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
 
