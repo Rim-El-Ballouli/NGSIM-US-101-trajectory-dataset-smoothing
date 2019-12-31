@@ -21,7 +21,7 @@ Below is a figure dipicting the original and the smoothed trajectory, using smoo
 Below is a figure dipicting the original and the smoothed trajectory, using smoothing window 21, for the Vehicle with ID 2  trajectory is smother than the previous one.
 ![Drag Racing](x_y_smoothed_21.png)
 ### Folder Structure
-Each folder contains three files:
+Each folder contains three main files:
 
 1. 0750_0805_us101_smoothed_*_.zip
 2. 0805_0820_us101_smoothed_*_.zip
@@ -29,6 +29,7 @@ Each folder contains three files:
 
 where * is the value set for the smoothing window. Each file contains all the smoothed vehicle trajectories for the following times respectively 7:50 am - 8:05 am, 8:05 am - 8:20 am, 8:20 am - 8:35 am
  
+In addition, you can find three plot images displaying x & y, accelration and velocity before and after smoothing for a sample car from the dataset.
 
 ### File Structure 
 
