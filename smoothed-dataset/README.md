@@ -15,10 +15,10 @@ We use separately a window of 11 and 21. We specifically chose 11 and 21 because
 
 **NOTE.** the filter is applied to the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
 
-Below is a figure dipicting the smoothed and the original trajectory of the Vehicle with ID 2 using window 11
+Below is a figure dipicting the original and the smoothed trajectory, using smoothing window 11, for the Vehicle with ID 2 
 ![Drag Racing](x_y_smoothed_11.png)
 
-Below is a figure dipicting the smoothed and the original trajectory of the Vehicle with ID 2 using window 21. Notice that the trajectory is smother than the previous one.
+Below is a figure dipicting the original and the smoothed trajectory, using smoothing window 21, for the Vehicle with ID 2  trajectory is smother than the previous one.
 ![Drag Racing](x_y_smoothed_21.png)
 ### Folder Structure
 Each folder contains three files:
