@@ -20,7 +20,7 @@ The NGSIM US 101 datatset has been the ultimate open source dataset for trajecto
 > [We do] not make any claims regarding data completeness. There
 >may be gaps in the data provided
 
-We found that when plotting acceleration against time, for some vehicles, there is a hard acceleration and deceleration in few seconds, which is unrealistic. Figure 1. dipicts the hard acceleration and deceleration for vehicle 2 across the time line of its traversal. In addition, we found that 8.99% of the dataset has an unrealistic acceeration above 3 m/s<sup>2</sup>.
+We found that when plotting acceleration against time, there is a hard acceleration and deceleration in only few seconds, which is unrealistic. The figure dipicts the hard acceleration and deceleration for vehicle 2 across the time line of its trajectory between 7:00  am and 8:35 am. In addition, we found that 8.99% of the dataset has an unrealistic acceeration above 3 m/s<sup>2</sup>.
 
 ![acceleration plot](https://github.com/Rim-El-Ballouli/NGSIM-dataset-smoothing/blob/master/acceleration_vehicle_2.png)
 
