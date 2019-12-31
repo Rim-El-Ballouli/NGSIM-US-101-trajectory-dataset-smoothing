@@ -1,26 +1,27 @@
 # Smoothed Dataset
 
-### Description
-Here you can find the smoothed dataset in CSV format. We provide two version of the smoothed dataset. Each is smoothed using a different smoothing window that is set for the Savitzky-Golay filter.   
+### Table of Content
 
-The Savitzky-Golay filter requires a **smoothing window** which dictates the number of points used to smooth a current data point. We use separately a window of 11 and 21. We specifically chose 11 and 21, because they represent, respectively, 10 and 20 data points excluding the target data point. This in trun corresponds, respectively, to 1 second and 2 seconds of trajectory data respectively. In other words, we use the trajectory data of 1 seconds and 2 seconds to smooth the data. Both dataset can be found in the folder wwindow-11 and window-12 respectively.
+1. [Description](#Description)
+2. [File Structure](#File-Structure)
+
+
+### Description
+Here you can find the smoothed dataset in CSV format. We provide two version of the smoothed dataset. Each is smoothed using a different smoothing window. The Savitzky-Golay filter requires a **smoothing window** which dictates the number of points used to smooth a current data point. 
+
+We use separately a window of 11 and 21. We specifically chose 11 and 21 because they represent, respectively, 10 and 20 data points excluding the target data point. This in trun corresponds, respectively, to 1 second and 2 seconds of trajectory data respectively. In other words, we use the trajectory data of 1 seconds and 2 seconds to smooth the data. Both datasets can be found in the folder window-11 and window-12 respectively.
 
 NOTE. the filter is applied to the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
 
 
+Each folder contains three files:
 
-Included Files:
+1. **0750_0805_us101_smoothed_11_.zip** This file contains all the smoothed vehicle trajectories for the time period 7:50 am - 8:05 am, sorted by time. 
+2. **0805_0820_us101_smoothed_11_.zip** This file contains all vehicle trajectories for the entire time period, sorted by time.
+3. **0820_0835_us101_smoothed_11_.zip** This file contains all vehicle trajectories for the entire time period, sorted by time. 
+ 
 
-**trajectories-smoothed-0750am-0805am**
-This file contains all vehicle trajectories for the entire time period, sorted by time. 
-
-**trajectories-smoothed-0805am-0820am**
-This file contains all vehicle trajectories for the entire time period, sorted by time. 
-
-**trajectories-smoothed-0820am-0835am**
-This file contains all vehicle trajectories for the entire time period, sorted by time. 
-
-### columns 
+### File Structure 
 
 Each of these files is structured in CSV format and the columns are described below in order of presecnce:
 
@@ -42,3 +43,4 @@ Each of these files is structured in CSV format and the columns are described be
 * **Following** Vehicle ID of the vehicle following the subject vehicle in the same lane. A value of '0' represents no following vehicle - occurs at the beginning of the study section and onramp due to the fact that only complete trajectories were recorded by this data collection effort (vehicle that did not traverse the downstream boundaries of the section by the end of the study period were not recorded).
 * **Space_Headway** Space Headway in feet. Spacing provides the distance between the frontcenter of a vehicle to the front-center of the preceding vehicle.
 * **Time_Headway** Time Headway in seconds. Time Headway provides the time to travel from the front-center of a vehicle (at the speed of the vehicle) to the front-center of the preceding vehicle. A headway value of 9999.99 means that the vehicle is traveling at zero speed (congested conditions).
+
