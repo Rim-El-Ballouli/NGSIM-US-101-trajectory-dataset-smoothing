@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2019 Altran Prototypes Automobiles (APA), Velizy-Villacoublay, France. All rights reserved.
 # //$URL:: https://github.com/Rim-El-Ballouli/NGSIM-dataset-smoothing/tree/master/smothing-code
 # //$Author:: Rim El Ballouli
 # //$Date:: 31/12/2019
