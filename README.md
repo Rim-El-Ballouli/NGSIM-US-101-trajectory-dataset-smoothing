@@ -49,7 +49,7 @@ There are two main ways you can make use of this repository:
 
 -- The first way is for anyone who isn't interested in the technical details, but only wants to use the smoothed dataset. The smoothed dataset can be downloaded from the smoothed dataset folder. 
 
--- The second way, a more complex one, is targeted for programmers, who maybe interested in the behind the seen code built in python 3.6 to smooth the data.
+-- The second way is for programmers, who maybe interested in the behind the seen code built in python 3.6 to smooth the data.
 
 Follow the read me file in each corresponding folder for more details.
 
