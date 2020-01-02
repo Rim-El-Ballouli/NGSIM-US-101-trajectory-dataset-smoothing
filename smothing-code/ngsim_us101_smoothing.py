@@ -11,11 +11,11 @@ This code
     3. saves smoothed dataset to three separate csv files
 """
 import pandas as pd
+import copy
 from scipy import signal
 from math import hypot
-import copy
-import os.path
-from os import path
+
+
 
 # A class defining color variables used to beautify console printing of the smoothing progress
 class bcolors:
