@@ -2,7 +2,7 @@
 
 ### Description
 
-*NGSIM US-101 Dataset Smothing* provides a less-noisy and smoothed version of the well known trajectory NGSIM US-101 dataset using **[Savitzky-Golay Filter](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.signal.savgol_filter.html)**. The Smoothing is done as a two step process which is composed of first, smothing the X and Y values, then recomputing velocities and acceleration with respect to the smoothed X, Y values. 
+*NGSIM US-101 Dataset Smothing* provides a less-noisy and smoothed version of the well known trajectory NGSIM US-101 dataset using **[Savitzky-Golay Filter](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.signal.savgol_filter.html)**. The Smoothing is done as a two step process which is composed of: first, smoothing the X and Y values, then recomputing velocities and acceleration with respect to the smoothed X, Y values. 
 
 ### Table of Content
 
@@ -13,7 +13,7 @@
 
 
 ### The NGSIM US-101 Dataset
-The NGSIM US 101 datatset has been the ultimate open source dataset for trajectory prediction for researchers since its release in 2005. Many Researchers including [1-3] have pointed out the presence of noise in the dataset, mainly due to the fact that it has been automatically extracted from video recordings of 8 cameras mounted over buildings overlooking the Hollywood Freeway, in Los Angeles, CA, also known as southbound US 101. The software used for the extraction of the NGSIM US-101 dataset is called NG-VIDEO software. In addition, the NGSIM documentation explicitly says: 
+The NGSIM US 101 datatset has been the ultimate open source dataset for trajectory prediction for researchers since its release in 2005. Many Researchers including [1-3] have pointed out the presence of noise in the dataset, mainly due to the fact that it has been automatically extracted from video recordings of 8 cameras mounted over buildings overlooking the Hollywood Freeway, in Los Angeles, California, also known as southbound US 101. The software used for the extraction of the NGSIM US-101 dataset is called NG-VIDEO software. In addition, the NGSIM documentation explicitly says: 
 
 > no accuracy assessment has been performed for the data set
 > 
@@ -49,7 +49,7 @@ There are two main ways you can make use of this repository:
 
 -- The first way is for anyone who isn't interested in the technical details, but only wants to use the smoothed dataset. The smoothed dataset can be downloaded from the smoothed dataset folder. 
 
--- The second way is for programmers, who maybe interested in the behind the seen code built in python 3.6 to smooth the data.
+-- The second way is for programmers, who maybe interested in the behind the scene code built in python 3.6 to smooth the data.
 
 Follow the read me file in each corresponding folder for more details.
 
