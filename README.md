@@ -41,7 +41,7 @@ There are three main approaches that can be used to smooth the dataset, which ar
 We rely on the second approach and we use the [Savitzky-Golay filter](https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.signal.savgol_filter.html) implemented in the python scipy.signal library. 
 
 
-**NOTE.** we apply the filter on the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the california state plane coordinate system.
+**NOTE.** we apply the filter on the Local_X and Local_Y and not the Global_X and Global_Y values since they are based on the California state plane coordinate system.
 
 
 ### How To Use
