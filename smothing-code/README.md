@@ -16,9 +16,5 @@ The python code performs the following:
 - scipy
 - copy, and math (from the standard library)
 
-you can add the corresponding reaquired librarys using pip or anaconda or 
-
-
-### Anaconda Environment
-
+you can add the corresponding reaquired librarys using pip or anaconda
 
