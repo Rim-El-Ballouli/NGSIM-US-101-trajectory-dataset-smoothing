@@ -12,9 +12,9 @@ The python code performs the following:
 
 ### Library Requirments
 - Python 3.6
-- pandas
+- Pandas
 - Scipy
-- copy, and math (from the standard library)
+- Copy, and math (from the standard library)
 
 You can add the corresponding librarys to your working environeent using eithe rpip or anaconda.
 
