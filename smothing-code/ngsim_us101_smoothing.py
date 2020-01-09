@@ -164,7 +164,7 @@ if __name__ == '__main__':
     # load the NGSIM data from the CSV files
     train1 = pd.read_csv(path_to_dataset + file_name1, sep=',', encoding='latin-1')
     train2 = pd.read_csv(path_to_dataset + file_name2, sep=',', encoding='latin-1')
-    train3 = pd.read_csv(path_to_dataset + file_name1, sep=',', encoding='latin-1')
+    train3 = pd.read_csv(path_to_dataset + file_name3, sep=',', encoding='latin-1')
 
     train = [train1, train2, train3]
 
