@@ -109,7 +109,8 @@ def print_to_file(dataset, file_name):
     """
     if (not path.exists(path_to_smoothed_dataset)):
         os.mkdir(path_to_smoothed_dataset)
-        dataset.to_csv( path_to_smoothed_dataset + file_name + '_smoothed_' +
+    
+    dataset.to_csv( path_to_smoothed_dataset + file_name + '_smoothed_' +
                                   str(smoothing_window) + '_.csv', index=False)
 
 def recompute_all_vel_acc():
