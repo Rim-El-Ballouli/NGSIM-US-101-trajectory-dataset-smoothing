@@ -153,8 +153,8 @@ if __name__ == '__main__':
     smoothing_window = 21
 
     # specify the path to the input NGSIM dataset and the path to the output smoothed dataset
-    path_to_dataset = 'C:/Users/relballouli/PycharmProjects/helloworld/trajectory/dataset/'
-    path_to_smoothed_dataset = 'C:/Users/relballouli/PycharmProjects/helloworld/trajectory/dataset/smoothed/'
+    path_to_dataset = 'C:/Users/...../trajectory/dataset/'
+    path_to_smoothed_dataset = 'C:/Users/...../trajectory/dataset/smoothed/'
 
     # change the file names as needed
     file_name1 = '0750_0805_us101.csv'
